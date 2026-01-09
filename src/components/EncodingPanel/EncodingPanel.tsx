@@ -103,7 +103,7 @@ export function EncodingPanel() {
             Map data to visual properties
           </p>
         </div>
-        {hasEncodings && (
+        
           <button
             onClick={clearAll}
             onMouseEnter={() => setHoveredClear(true)}
@@ -141,7 +141,7 @@ export function EncodingPanel() {
             </svg>
             Clear
           </button>
-        )}
+        
       </div>
 
       {/* Sections */}
