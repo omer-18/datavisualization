@@ -342,7 +342,7 @@ export function ChartView() {
             </p>
           </div>
         </div>
-      ) : (
+      ) : null}
         <div
           ref={containerRef}
           style={{
@@ -353,14 +353,13 @@ export function ChartView() {
             border: '1px solid var(--color-border)',
             position: 'relative',
             zIndex: 1,
-            display: 'flex',
+            display: spec ? 'flex' : 'none',
             alignItems: 'center',
             justifyContent: 'center',
             animation: 'fadeIn 0.4s ease-out',
             overflow: 'hidden',
           }}
         />
-      )}
 
       {/* Footer gradient line */}
       <div
